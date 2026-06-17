@@ -386,9 +386,9 @@ a:focus {
 
 .loading-container,
 .loading {
-    height: 100px;
+    height: 150px;
     position: relative;
-    width: 100px;
+    width: 150px;
     border-radius: 100%;
 }
 
@@ -412,7 +412,7 @@ a:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 66px;
+    max-width: 110px;
     transform: translate(-50%, -50%);
 }
 
@@ -3039,12 +3039,12 @@ header.main-header .header-sticky.active {
 .footer-newsletter-box,
 .footer-about {
     position: relative;
-    width: calc(30% - 66.66px);
+    width: calc(30% - 68px);
 }
 
 .footer-links-box {
     position: relative;
-    width: calc(40% - 66.66px);
+    width: calc(40% - 68px);
 }
 
 .footer-links-box::before,
@@ -3252,6 +3252,64 @@ header.main-header .header-sticky.active {
 
 .footer-newsletter-form .form-group .newsletter-btn:hover img {
     transform: rotate(45deg);
+}
+
+.footer-contact-info {
+    margin-top: 25px;
+}
+
+.footer-contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact-info ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-contact-info ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-contact-info ul li .icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(245, 130, 32, 0.15);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-contact-info ul li .icon-box i {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.footer-contact-info ul li .contact-text {
+    flex-grow: 1;
+}
+
+.footer-contact-info ul li .contact-text p {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-contact-info ul li .contact-text p a {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-contact-info ul li .contact-text p a:hover {
+    color: var(--secondary-color);
 }
 
 .footer-copyright-text {
@@ -5750,10 +5808,10 @@ header.main-header .header-sticky.active {
     }
     .footer-newsletter-box,
     .footer-about {
-        width: calc(30% - 33.33px);
+        width: calc(30% - 35px);
     }
     .footer-links-box {
-        width: calc(40% - 33.33px);
+        width: calc(40% - 35px);
     }
     .footer-links-box::before,
     .footer-about::before {
